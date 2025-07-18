@@ -1,0 +1,14 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    secureJsonData:
+      token: IHblSxxJqv5evVkXonUn5FbCXhy4G778PeyKft-K3T9vVVl5ojyR_m6m0e7paPglFWL-mqo2kKOS5xmE9IQ0Jg==
+    jsonData:
+      version: Flux
+      organization: myorg
+      defaultBucket: energy_data
+      tlsSkipVerify: true
