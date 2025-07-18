@@ -4,9 +4,17 @@
 
 1. docker compose up 
 
-2. ./scripts/run_simulated_meter.sh
+2. create a virtual env
 
-3. ./scripts/run_subscriber.sh
+pipenv shell
+pipenv install
+
+3. run scripts
+
+unset MQTT_SERVER
+
+./scripts/run_simulated_meter.sh
+./scripts/run_subscriber.sh
 
 4. login to influx @ http://<IP_address>:8086/
 
